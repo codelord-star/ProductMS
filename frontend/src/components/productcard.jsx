@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ProductCard({ product }) {
   return (
 
@@ -21,6 +23,16 @@ function ProductCard({ product }) {
           <h4 className="text-success">
             KES {product.price}
           </h4>
+
+        </div>
+
+        <div className="d-flex justify-content-between">
+            <Link
+                to={`/edit-product/${product.id}`}
+                className="btn btn-outline-primary"
+            >
+                Edit
+            </Link>
 
         </div>
 
