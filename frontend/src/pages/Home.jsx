@@ -28,6 +28,15 @@ function Home() {
 
   };
 
+  const deleteProduct = async (id) => {
+    try {
+      await api.delete(`products/${id}/`);
+      setProducts((prev) => prev.filter((p) => p.id !== id));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
 
     <div className="container mt-5">
@@ -43,6 +52,7 @@ function Home() {
           <ProductCard
             key={product.id}
             product={product}
+            onDelete={deleteProduct}
           />
 
         ))}

@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 
-function ProductCard({ product }) {
+function ProductCard({ product, onDelete }) {
+  const handleDelete = () => {
+    if (!onDelete) return console.warn('onDelete not provided');
+    if (window.confirm('Are you sure you want to delete this product?')) {
+      onDelete(product.id);
+    }
+  };
+
   return (
 
     <div className="col-md-4 mb-4">
@@ -26,14 +33,25 @@ function ProductCard({ product }) {
 
         </div>
 
-        <div className="d-flex justify-content-between">
-            <Link
-                to={`/edit-product/${product.id}`}
-                className="btn btn-outline-primary"
-            >
-                Edit
-            </Link>
+        <div className="d-flex justify-content-between p-2">
+          <Link
+            to={`/edit-product/${product.id}`}
+            className="btn btn-outline-primary"
+          >
+            Edit
+          </Link>
 
+          <button
+            className="btn btn-outline-danger"
+            onClick={handleDelete}
+          >
+            Delete
+          </button>
+
+        </div>
+
+        <div>
+          
         </div>
 
       </div>
