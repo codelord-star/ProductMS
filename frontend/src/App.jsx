@@ -31,6 +31,11 @@ function App() {
           element={<AddProduct />}
         />
 
+        <Route
+          path="/edit-product/:id"
+          element={<EditProduct />}
+        />
+
       </Routes>
 
       <Footer />
