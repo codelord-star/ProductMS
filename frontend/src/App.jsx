@@ -10,6 +10,7 @@ import Footer from "./components/footer";
 import Home from "./pages/Home";
 import AddProduct from "./pages/AddProduct";
 import EditProduct from "./pages/EditProduct";
+import Login from "./pages/Login";
 
 function App() {
 
@@ -34,6 +35,11 @@ function App() {
         <Route
           path="/edit-product/:id"
           element={<EditProduct />}
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
         />
 
       </Routes>

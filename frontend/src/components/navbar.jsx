@@ -23,10 +23,17 @@ function Navbar() {
           </Link>
 
           <Link
-            className="btn btn-warning"
+            className="btn btn-warning me-2"
             to="/add-product"
           >
             Add Product
+          </Link>
+
+          <Link
+            className="btn btn-light"
+            to="/login"
+          >
+            Login
           </Link>
 
         </div>
