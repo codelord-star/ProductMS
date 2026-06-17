@@ -30,6 +30,13 @@ function Navbar() {
           </Link>
 
           <Link
+            className="btn btn-info me-2"
+            to="/register"
+          >
+            Register
+          </Link>
+
+          <Link
             className="btn btn-light"
             to="/login"
           >

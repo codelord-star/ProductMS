@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import AddProduct from "./pages/AddProduct";
 import EditProduct from "./pages/EditProduct";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
 
@@ -40,6 +41,11 @@ function App() {
         <Route
           path="/login"
           element={<Login />}
+        />
+
+        <Route
+          path="/register"
+          element={<Register />}
         />
 
       </Routes>
