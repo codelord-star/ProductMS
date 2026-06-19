@@ -88,7 +88,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'myreactapp',
-        
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
