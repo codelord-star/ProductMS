@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function AddProduct() {
 
   const navigate = useNavigate();
-
+  
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
