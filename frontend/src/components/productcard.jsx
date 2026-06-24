@@ -50,10 +50,6 @@ function ProductCard({ product, onDelete }) {
 
         </div>
 
-        <div>
-          
-        </div>
-
       </div>
 
     </div>
